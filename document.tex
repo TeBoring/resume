@@ -1,0 +1,90 @@
+% LaTeX file for resume
+% This file uses the resume document class (res.cls)
+
+%\documentclass[margin,line]{res}
+\documentclass[]{res}
+% the margin option causes section titles to appear to the left of body text
+\textwidth=5.2in % increase textwidth to get smaller right margin
+
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font
+
+\begin{document}
+\name{Bo Yang\\[12pt]} % the \\[12pt] adds a blank line after name
+\address{412-577-8056 \\paulyang1211@gmail.com}
+\address{401 Shady Ave APT C207\\Pittsburgh, PA 15206}
+
+
+
+\begin{resume}
+\section{Education}
+ {\bf Carnegie Mellon University \hfill Dec. 2013}
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item M.S., VLIS, Computer Science, GPA: 3.73/4.0
+ \item
+    Selected Courses: Distributed System, Storage System, Parallel Programming, Data Mining, Machine Learning 
+ \end{itemize}
+ {\bf Fudan University, Shanghai, China \hfill Jul. 2012}
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item B.S. for Computer Science, GPA: 3.63/4.0
+ \end{itemize}
+ 
+ {\bf National University of Singapore \hfill Dec. 2010}
+ \begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Exchange for Computer Science, GPA:3.82/4.0
+ \item
+    Selected Courses: Stochastic Process, Network
+ \end{itemize}
+
+% Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
+\section{Skills}
+C/C++, Java, Go, SQL, NoSQL, DynamoDB, Accumulo, Hadoop, Pig, Matlab, ISPC, CUDA, OpenMP, MPI, git
+
+\section{Experience}
+
+{\bf SDE Intern, Workforce Management, Amazon \hfill  May. 2013 to Aug. 2013}
+\begin{itemize} \itemsep -2pt %reduce space between items
+\item Developed a realtime SMS work schedule notification system for Amazon hourly employees. 
+\end{itemize}
+
+{\bf SDE Intern, Risk Detection, Paypal \hfill  Dec. 2010 to Apr. 2011}
+\begin{itemize} \itemsep -2pt %reduce space between items
+\item Implemented cache for a metric audit system.
+\end{itemize}
+
+\section{Projects}
+{\bf Airline Booking System  \hfill }
+\begin{itemize} \itemsep -2pt %reduce space between items
+\item Multiple replication groups for different regions. \textit{2PC} for distributed 
+transactions among different replication groups. \textit{Paxos} within single replication group.
+\textit{Consistent hashing} and \textit{distributed consistent caching} in backend \textit{key-value storage}.
+\end{itemize}
+
+{\bf Cloud File System  \hfill }
+\begin{itemize} \itemsep -2pt %reduce space between items
+\item Use \textit{S3} as secondary storage to increase capacity for local file system. Use 
+deduplication to decrease capacity usage on cloud. Implement \textit{segmented
+LRU} cache to reduce requests to cloud.
+\end{itemize}
+
+{\bf Parallel Programming  \hfill }
+\begin{itemize} \itemsep -2pt %reduce space between items
+\item Elastic Web Server with balanced work distribution.
+\item Speedup Wandering Salesperson with OpenMP and MPI.
+\item Backpropagation with CUDA
+\end{itemize}
+
+{\bf Graph mining on large data set  \hfill }
+\begin{itemize} \itemsep -2pt %reduce space between items
+\item PageRank, Diameter, Eigenvalue with Hadoop, Pig and Pegasus.
+\end{itemize}
+
+{\bf OpenCloud Log Parser  \hfill }
+\begin{itemize} \itemsep -2pt %reduce space between items
+\item User usage metric auditing with Hadoop and Accumulo.
+\end{itemize}
+
+\end{resume}
+\end{document}
+
+
